@@ -1471,7 +1471,7 @@ public static class ConPtyShell
         if (handlePseudoConsole != IntPtr.Zero) ClosePseudoConsole(handlePseudoConsole);
         if (InputPipeWrite != IntPtr.Zero) CloseHandle(InputPipeWrite);
         if (OutputPipeRead != IntPtr.Zero) CloseHandle(OutputPipeRead);
-        output += "ConPtyShell kindly exited.\r\n";
+        output += "";
         return output;
     }
 }
